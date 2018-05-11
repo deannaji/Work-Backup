@@ -1,0 +1,15 @@
+body{
+	background-color: blue;
+}
+
+.desktop-label{
+	display: block;
+}
+
+.tablet-label{
+	display: none;
+}
+
+.mobile-label{
+	display: none;
+}

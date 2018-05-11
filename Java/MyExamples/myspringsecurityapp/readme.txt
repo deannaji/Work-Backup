@@ -1,0 +1,1 @@
+Configuring Spring Security on a Spring MVC 3 simple application.

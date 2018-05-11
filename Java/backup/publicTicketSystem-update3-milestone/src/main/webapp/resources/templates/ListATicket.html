@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Insert title here</title>
+<link href="/resources/static/css/styles.css" th:href="@{/resources/static/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+  <h1>Index</h1>
+  <br />
+  <table class="ticketsTbl">
+    <thead>
+        <tr>
+          <td>ID</td>
+          <td>Name</td>
+          <td>Problem Title</td>
+          <td>Problem Description</td>
+          <td>Status</td>
+          <td>Date & Time</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td th:text="${ticket1.id}"></td>
+          <td th:text="${ticket1.empName}"></td>
+          <td th:text="${ticket1.probTitle}"></td>
+          <td th:text="${ticket1.probDisc}"></td>
+          <td th:text="${ticket1.status}"></td>
+          <td th:text="${ticket1.ticketDateTime}">DateTime</td>
+        </tr> 
+    </tbody>
+  </table>
+</body>
+</html>

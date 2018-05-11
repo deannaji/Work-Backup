@@ -1,0 +1,1 @@
+Spring Boot application, uses Spring Data repositories, and Validation.

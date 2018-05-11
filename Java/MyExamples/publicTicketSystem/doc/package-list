@@ -1,0 +1,5 @@
+com.uci.oit.pts.config
+com.uci.oit.pts.site.controllers
+com.uci.oit.pts.site.domain
+com.uci.oit.pts.site.repository
+com.uci.oit.pts.site.services

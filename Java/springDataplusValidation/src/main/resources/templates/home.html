@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<div class="header-container">
+		<div class="left-header-container" style="display: inline-block;">
+			<nav>
+				<a href="/display">Display All Tickets</a> | <a href="/add">Add
+					a Ticket</a>
+			</nav>
+		</div>
+		<div class="right-header-container"
+			style="display: inline-block; float: right;">
+			<form th:action="@{/logout}" method="post">
+				<input type="submit" value="Sign Out" />
+			</form>
+		</div>
+	</div>
+
+
+	<h1>Welcome to home page!</h1>
+</body>
+</html>

@@ -1,0 +1,1 @@
+An Example of using Mockito for mocking dependency and for Unit testing along with JUnit.

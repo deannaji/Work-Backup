@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layout">
+
+  <main>
+    <div class="main-container" layout:fragment="content">
+      <div style="display:inline-block;">
+	      <form th:action="@{/search}" method="POST">
+	         <label>Search for a ticket: </label>
+	         <input name="searchItem" type="search" />
+	         <input type="submit" value="Search" />
+	      </form>
+      </div> 
+      <div style="display:inline-block; float:right">
+        <form th:action="@{/sort}" method="POST">
+	        <label>Display: </label>
+	        <select name="sortItem" onchange="this.form.submit()">
+	           <option value="">Search by status</option>
+	           <option value="all">All</option>
+	           <option value="active">Active</option>
+	           <option value="new">New</option>
+	           <option value="resolved">Resolved</option>
+	        </select>
+        </form>
+      </div>
+      <br /><br />
+	  <table class="ticketsTbl">
+	    <thead>
+	        <tr>
+	          <th>ID</th>
+	          <th>Name</th>
+	          <th>Problem Title</th>
+	          <th>Problem Description</th>
+	          <th>Status</th>
+	          <th>Assigned To</th>
+	          <th>Date & Time</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr th:each="ticket : ${AllTickets}">
+	          <td><a th:href="@{/edit?(id=${ticket.id})}" th:text="${ticket.id}">ticketId</a></td>
+	          <td th:text="${ticket.empName}"></td>
+	          <td th:text="${ticket.probTitle}"></td>
+	          <td th:text="${ticket.probDisc}"></td>
+	          <td th:text="${ticket.status}"></td>
+	          <td th:text="${ticket.assigned_to}"></td>
+	          <td th:text="${ticket.ticketDateTime}">DateTime</td>
+	        </tr> 
+	    </tbody>
+	  </table>
+	</div>
+  </main>
+  
+</html>

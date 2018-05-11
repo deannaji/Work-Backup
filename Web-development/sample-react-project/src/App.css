@@ -1,0 +1,8 @@
+*{
+   fontFamily: 'sans-serif';
+}
+
+.itemsBox{
+  border: 1px solid black;
+  width: 35%;
+}

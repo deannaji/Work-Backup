@@ -1,0 +1,14 @@
+Key:
+8603ed1f00a932b693d0fbabc5656144
+
+API call:
+http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={APIKEY} 
+
+
+All cities togather:
+http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=8603ed1f00a932b693d0fbabc5656144
+
+
+For 1 city:
+http://api.openweathermap.org/data/2.5/weather?q=London,uk&units=imperial&appid=8603ed1f00a932b693d0fbabc5656144
+

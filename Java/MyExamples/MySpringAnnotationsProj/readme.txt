@@ -1,0 +1,1 @@
+Spring 3 MVC using Java annotations for configuration, and Spring JDBC Template for DB. 

@@ -1,0 +1,6 @@
+com\uci\myspringsecurity\config\Bootstrap.class
+com\uci\myspringsecurity\config\SecurityConfiguration.class
+com\uci\myspringsecurity\config\RootContextConfiguration.class
+com\uci\myspringsecurity\site\MainController.class
+com\uci\myspringsecurity\config\ServletContextConfiguration.class
+com\uci\myspringsecurity\config\SecurityBootstrap.class

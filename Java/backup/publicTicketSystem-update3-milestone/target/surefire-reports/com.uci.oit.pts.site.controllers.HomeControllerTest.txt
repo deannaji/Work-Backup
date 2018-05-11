@@ -1,0 +1,65 @@
+-------------------------------------------------------------------------------
+Test set: com.uci.oit.pts.site.controllers.HomeControllerTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 11, Errors: 0, Skipped: 0, Time elapsed: 0.114 sec <<< FAILURE!
+com.uci.oit.pts.site.controllers.HomeControllerTest.testEditTicketIntStringStringString()  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testEditTicketIntStringStringString(HomeControllerTest.java:126)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 19 more
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testSearch()  Time elapsed: 0.096 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testSearch(HomeControllerTest.java:152)
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testIndex()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testIndex(HomeControllerTest.java:69)
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testGetTicket()  Time elapsed: 0.016 sec  <<< FAILURE!
+org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced argument matcher detected here:
+-> at com.uci.oit.pts.site.controllers.HomeControllerTest.testSearch(HomeControllerTest.java:152)
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testGetTicket(HomeControllerTest.java:95)
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testSort()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testSort(HomeControllerTest.java:164)
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testGreeting()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testGreeting(HomeControllerTest.java:62)
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testEditTicketModelInt()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testEditTicketModelInt(HomeControllerTest.java:120)
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testGetAllTickets()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testGetAllTickets(HomeControllerTest.java:109)
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testLoginStringString()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testLoginStringString(HomeControllerTest.java:84)
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testAddTicketGETReq()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testAddTicketGETReq(HomeControllerTest.java:133)
+
+com.uci.oit.pts.site.controllers.HomeControllerTest.testLoginModelString()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.controllers.HomeControllerTest.testLoginModelString(HomeControllerTest.java:78)
+

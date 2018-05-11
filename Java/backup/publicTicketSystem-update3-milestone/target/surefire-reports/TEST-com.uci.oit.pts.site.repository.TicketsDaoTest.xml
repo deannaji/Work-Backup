@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="6" failures="5" name="com.uci.oit.pts.site.repository.TicketsDaoTest" time="0" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\bin"/>
+    <property name="java.vm.version" value="25.152-b16"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\OITdevEnv\home\Java-development\java-workspace\publicTicketSystem"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\OITdevEnv\home\Java-development\java-workspace\publicTicketSystem"/>
+    <property name="java.runtime.version" value="1.8.0_152-b16"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\najih\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\OITdevEnv\home\Java-development\java-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf3593643155595453647.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Program Files/Java/jre1.8.0_152/bin/server;C:/Program Files/Java/jre1.8.0_152/bin;C:/Program Files/Java/jre1.8.0_152/lib/amd64;C:\ProgramData\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\110\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\Microsoft SQL Server\120\DTS\Binn\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\dotnet\;&quot;C:\Program Files\Java\jdk1.8.0_151&quot;;C:\Users\najih\AppData\Local\Microsoft\WindowsApps;C:\Users\najih\AppData\Local\Programs\Fiddler;C:\OITdevEnv\home\eclipse;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\najih"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="najih"/>
+    <property name="java.class.path" value="/C:/OITdevEnv/home/eclipse/plugins/org.eclipse.m2e.maven.runtime_1.7.0.20160603-1931/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\OITdevEnv\bin\java\jdk1.8.0_152\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_152"/>
+    <property name="java.ext.dirs" value="C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\lib\ext;C:\windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\lib\resources.jar;C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\lib\rt.jar;C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\lib\sunrsasign.jar;C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\lib\jsse.jar;C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\lib\jce.jar;C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\lib\charsets.jar;C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\lib\jfr.jar;C:\OITdevEnv\bin\java\jdk1.8.0_152\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\OITdevEnv\home\Java-development\java-workspace\publicTicketSystem\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.uci.oit.pts.site.repository.TicketsDaoTest" name="com.uci.oit.pts.site.repository.TicketsDaoTest.testGetTicket" time="0">
+    <failure message="org/junit/Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testGetTicket(TicketsDaoTest.java:32)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 19 more
+</failure>
+  </testcase>
+  <testcase classname="com.uci.oit.pts.site.repository.TicketsDaoTest" name="com.uci.oit.pts.site.repository.TicketsDaoTest.testAddNote" time="0">
+    <failure message="org/junit/Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testAddNote(TicketsDaoTest.java:60)
+</failure>
+  </testcase>
+  <testcase classname="com.uci.oit.pts.site.repository.TicketsDaoTest" name="com.uci.oit.pts.site.repository.TicketsDaoTest.testCreateTicket" time="0">
+    <failure message="org/junit/Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testCreateTicket(TicketsDaoTest.java:48)
+</failure>
+  </testcase>
+  <testcase classname="com.uci.oit.pts.site.repository.TicketsDaoTest" name="com.uci.oit.pts.site.repository.TicketsDaoTest.testTicketsDao" time="0"/>
+  <testcase classname="com.uci.oit.pts.site.repository.TicketsDaoTest" name="com.uci.oit.pts.site.repository.TicketsDaoTest.testUpdateTicket" time="0">
+    <failure message="org/junit/Assert" type="java.lang.NoClassDefFoundError">java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testUpdateTicket(TicketsDaoTest.java:54)
+</failure>
+  </testcase>
+  <testcase classname="com.uci.oit.pts.site.repository.TicketsDaoTest" name="com.uci.oit.pts.site.repository.TicketsDaoTest.testGetAllTickets" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.uci.oit.pts.site.repository.TicketsDao.getAllTickets(TicketsDao.java:65)
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testGetAllTickets(TicketsDaoTest.java:41)
+</failure>
+  </testcase>
+</testsuite>

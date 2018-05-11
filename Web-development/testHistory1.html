@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<body>
+   <h1>Content Page!</h1>
+   <p>Click <a href="testHistory2.html">here</a> to logout.</p>
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	//var r = confirm("You pressed a Back button! Are you sure?!");
+	var r=false;
+	if(!r){
+		history.forward();
+	}	
+   /*console.log(window.history);
+   console.log(window.history.back());
+   console.log(history.forward());
+
+  if (window.history && window.history.pushState) {
+    var statObj={'action':'https://www.google.com'};
+    window.history.pushState(statObj, 'action', 'https://www.google.com');
+
+    $(window).on('popstate', function() {
+      alert('Back button was pressed.');
+    });
+
+  }*/
+});
+</script>

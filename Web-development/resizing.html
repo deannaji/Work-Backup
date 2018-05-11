@@ -1,0 +1,72 @@
+<! doctype html>
+<html>
+  <head>
+  	<style type="text/css">
+  		.main-container{
+  			height: 90%;
+  			width: 100%;
+  		}
+
+  		.hamburger {
+ 			width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+            cursor: pointer;
+        }
+
+        .hamburger-container{
+        	display: inline;
+        	background-color: black;
+            float: right; 
+            margin-top: 4%;
+            margin-right: 4%;
+            margin-left: 4%;
+            margin-bottom: 4%;
+
+        }
+
+  	</style>
+  </head>
+  <body>
+  	<div class="main-container">
+  		<div class="top-container" style="background-color: black; overflow: auto; width: 100%; height:10%;">
+  			<div class="hamburger-container" id="hamburgerContainer" style="width: 10%; height: 10%;/*display: none;*/">
+  				 <div class="hamburger"></div>
+                 <div class="hamburger"></div>
+                 <div class="hamburger"></div>
+  			</div>
+  		</div>
+  		<div class="left-container" id="leftContainer" style="background-color: lightgray; height: 90%; width: 70%; display: inline-block;">
+  		</div>
+  		<div class="right-container" id="rightContainer" style="background-color: wheat; height: 90%; width: 29%; display: inline-block; float: right;">
+  		</div>
+  		<div class="bottom-container" style="background-color: blue; width: 100%; height: 15%;"></div>
+  	</div>	
+  </body>
+  <script type="text/javascript">
+  	var initWidth = window.outerWidth;
+  	window.onload =function() {
+      //alert(window.outerWidth);
+    };
+  	window.addEventListener ("resize", function() {
+	   //alert("resized!");	
+	   var w= window.outerWidth,
+           h= window.outerHeight;
+        var rightCont = document.getElementById("rightContainer"),
+            leftCont =  document.getElementById("leftContainer"),
+            hamburgerMenu = document.getElementById("hamburgerContainer");  
+        console.log(w);
+   
+        if(w <= 600/*initWidth/2*/){
+            rightCont.style.display = 'none';
+            hamburgerMenu.style.display ='inline'; 
+            leftCont.style.width="100%";
+        }else{
+        	rightCont.style.display = 'inline';
+        	hamburgerMenu.style.display = 'none';
+        	leftCont.style.width="70%";
+        }
+	});
+  </script>
+</html>

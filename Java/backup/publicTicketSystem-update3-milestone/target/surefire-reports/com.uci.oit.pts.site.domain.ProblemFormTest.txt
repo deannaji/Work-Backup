@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.uci.oit.pts.site.domain.ProblemFormTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+com.uci.oit.pts.site.domain.ProblemFormTest.testValueSetting()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.uci.oit.pts.site.domain.ProblemFormTest.testValueSetting(ProblemFormTest.java:32)
+

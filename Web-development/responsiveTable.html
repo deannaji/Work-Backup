@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+	<head>
+		<style type="text/css">
+			.resp-table {
+			   width: 100%;
+			   display: table;
+			   font-size: 2vw;/*Makes the text responsive, important for responsive*/
+			}
+			.resp-thead{
+				display: table-header-group;
+				background-color: gray;
+				font-weight: bold;
+				font-size: 1em;
+			}
+
+            .resp-thead .resp-td{
+            	color:#FFFFFF;	
+                background-color: #1e4dc1;
+            }
+
+			.resp-tbody{
+				display: table-row-group;
+			}
+
+			.resp-tr{
+				display: table-row;
+			}
+
+			.resp-td{
+				display: table-cell;
+				/*padding: 10px;*/
+				text-align: justify;
+				/*border-bottom: 1px solid black;*/
+			}
+
+            .resp-tr:nth-child(even){
+            	background-color: #f2f2f2;
+            }
+
+		</style>
+	</head>
+	<body>
+		<div class="resp-table">
+			<div class="resp-thead">
+				<div class="resp-tr">
+					<div class="resp-td">Id</div>
+					<div class="resp-td">Name</div>
+					<div class="resp-td">Email</div>
+				</div>
+			</div>
+			<div class="resp-tbody">
+				<div class="resp-tr">
+					<div class="resp-td">1</div>
+					<div class="resp-td">Dean</div>
+					<div class="resp-td">d@.com</div>
+				</div>
+				<div class="resp-tr">
+					<div class="resp-td">2</div>
+					<div class="resp-td">John</div>
+					<div class="resp-td">j@.com</div>
+				</div>
+				<div class="resp-tr">
+					<div class="resp-td">3</div>
+					<div class="resp-td">John</div>
+					<div class="resp-td">j@.com</div>
+				</div>
+				<div class="resp-tr">
+					<div class="resp-td">4</div>
+					<div class="resp-td">John</div>
+					<div class="resp-td">j@.com</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

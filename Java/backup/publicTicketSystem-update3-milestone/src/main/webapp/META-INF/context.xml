@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+   
+    <Resource name="jdbc/SpringJpa" type="javax.sql.DataSource"
+		maxActive="20" maxIdle="5" maxWait="10000"
+		username="tds_app" password="!hXv-8U3_RsFu-1~y"
+		driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+		defaultTransactionIsolation="READ_COMMITTED"
+		url="jdbc:sqlserver://127.0.0.1:4433;DatabaseName=tds_netdb;" />
+</Context>

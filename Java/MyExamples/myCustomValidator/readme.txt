@@ -1,0 +1,1 @@
+This Spring application demonstrate how to create a custome validator using Hibernate validation.

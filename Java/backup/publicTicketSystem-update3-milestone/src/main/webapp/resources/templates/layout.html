@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!--/*  Each token will be replaced by their respective titles in the resulting page. */-->
+    <title layout:title-pattern="$LAYOUT_TITLE - $CONTENT_TITLE">Public Tickets System</title>
+    <link href="/resources/static/css/styles.css" th:href="@{/resources/static/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <h1>Public Tickets System</h1>
+    </div>
+    <div class="nav-bar">
+	    <nav>
+	    
+	    <!-- if -->
+	     <span th:if="${pageName} =='index'">
+	          <a class="selected-nav" href="/publicTicketSystem/display">Display Tickets</a>
+	     </span>
+	     <!-- else -->
+	     <span th:unless="${pageName} =='index'">
+	          <a href="/publicTicketSystem/display">Display Tickets</a>
+	     </span>      	     
+	      |
+	     <span th:if="${pageName} =='add'">
+	         <a class="selected-nav" href="/publicTicketSystem/add">Create Ticket</a>
+	     </span>
+	     <span th:unless="${pageName} =='add'">
+	        <a href="/publicTicketSystem/add">Create Ticket</a>
+	     </span> 
+	 
+	    </nav>
+	    <div class="logout-container">
+            <a th:href="@{/logout}">Logout</a>
+        </div>
+    </div>
+    <div class="user-container" style="float:right;">
+       <span>You are logged in as <span th:text="${session.username}">guest user</span></span>
+    </div>
+  </header>
+  
+  <!-- Main content is here-->
+  <div layout:fragment="content"></div>
+  
+  <footer>
+       <div class="footer-container">
+           <span>TDS - Public Tickets System. Powered by Spring MVC 3</span>
+       </div>
+  </footer>
+</body>
+</html>

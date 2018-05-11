@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Insert title here</title>
+<link href="/resources/static/css/loginStyle.css" th:href="@{/resources/static/css/loginStyle.css}" rel="stylesheet" />
+</head>
+<body>
+  <div class="login-box" align="center">
+	  <p>Public Tickets System</p>
+	  <p>Login</p>
+	  <form action="" method="POST">  
+	     <input class="inputField" name="username" type="text" placeholder="username"><br /><br />
+	     <input class="inputField" name="password" type="password" placeholder="password"><br />
+	     <br /><br />
+	     <input id="login-button" type="submit" value="Login">
+	  </form>
+	  <br />
+	  <br />
+	  <P>------ Or ------</P>
+	  <p>You can <a href="https://login.uci.edu/ucinetid/webauth?ucinetid_auth">login</a> using your UCINetId</p>
+  </div>
+</body>
+</html>

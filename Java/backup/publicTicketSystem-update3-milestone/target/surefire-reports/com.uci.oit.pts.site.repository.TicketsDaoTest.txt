@@ -1,0 +1,31 @@
+-------------------------------------------------------------------------------
+Test set: com.uci.oit.pts.site.repository.TicketsDaoTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+com.uci.oit.pts.site.repository.TicketsDaoTest.testGetTicket()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testGetTicket(TicketsDaoTest.java:32)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:338)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 19 more
+
+com.uci.oit.pts.site.repository.TicketsDaoTest.testAddNote()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testAddNote(TicketsDaoTest.java:60)
+
+com.uci.oit.pts.site.repository.TicketsDaoTest.testCreateTicket()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testCreateTicket(TicketsDaoTest.java:48)
+
+com.uci.oit.pts.site.repository.TicketsDaoTest.testUpdateTicket()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testUpdateTicket(TicketsDaoTest.java:54)
+
+com.uci.oit.pts.site.repository.TicketsDaoTest.testGetAllTickets()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.uci.oit.pts.site.repository.TicketsDao.getAllTickets(TicketsDao.java:65)
+	at com.uci.oit.pts.site.repository.TicketsDaoTest.testGetAllTickets(TicketsDaoTest.java:41)
+
