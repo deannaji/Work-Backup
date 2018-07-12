@@ -1,0 +1,25 @@
+From Loi:
+these are the aliases i have for tomcat. 
+so, tstart will remove cache directory, and start up tomcat with debugger enable.
+   
+     alias trestart=‘tstop;tstart’
+     alias tstart=‘rm -r ${CATALINA_HOME}/temp/ehcache/*;${CATALINA_HOME}/bin/catalina.sh jpda start’
+     alias tstatus=‘ps -ef | grep org.apache.catalina’
+     alias tstop=‘${CATALINA_HOME}/bin/catalina.sh stop 1 -force’
+
+I also alias gradle: 
+     
+     alias grr='gradle --daemon'
+
+When it comes to typing, shorter is always better.
+My usual build firefly command would be:  
+     
+     grr :fi:bAD; trestart
+
+This build, deploy, then restart tomcat after clearing caches to ensure a clean deployment.
+
+Alias is like shortcut in unix.  so, instead of typing gradle --daemon every time, i type grr.
+See: https://www.digitalocean.com/community/tutorials/an-introduction-to-useful-bash-aliases-and-functions 
+
+If you’re using bash shell, you can add those lines into your ~/.bashrc file.
+Then, you can use the alias as if they are ordinary commands.

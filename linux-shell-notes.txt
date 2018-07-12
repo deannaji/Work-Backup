@@ -1,0 +1,12 @@
+- List all processes:
+   
+      ps -ef
+
+- List specific (ex: tomcat) processes:
+  
+      ps -ef | grep tomcat
+
+
+- List java virtual machine process status tool:
+
+      jps
